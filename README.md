@@ -322,5 +322,4 @@ host names, URLs, or status data is not appropriate for your environment.
 
 ## License
 
-This project is documented as MIT-licensed. Add a `LICENSE` file before
-publishing if the repository does not already include one.
+This project is MIT-licensed. 
