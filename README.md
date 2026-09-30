@@ -1,4 +1,5 @@
 # Homelab Dashboard
+<img src="assets/icons/favicon.svg" alt="Logo" width="48" height="48">
 
 > [!NOTE]
 > **Project Status:** This dashboard is feature-complete for my setup, and I won't be actively developing or maintaining new versions. Feel free to fork it and make it your own!
@@ -32,6 +33,7 @@ to copy, back up, and run from a standard PHP web root.
   startup, timed rotation, dimming, looping, and mute options.
 - In-browser manager for dashboard settings, links, hosts, assets, and the
   admin password.
+  ![Homelab Dashboard Screenshot](assets/output.gif)
 
 ## Requirements
 
