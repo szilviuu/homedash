@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Clip path so the label emerges from the slot and doesn't overlap the printer's front -->
+    <clipPath id="printer-slot">
+      <rect x="0" y="0" width="100" height="60" />
+    </clipPath>
+    
+    <style>
+      .label-paper {
+        animation: print-action 3.5s ease-in-out infinite;
+      }
+      .status-light {
+        animation: blink 1s alternate infinite;
+      }
+
+      /* Sliding up out of the printer and fading out */
+      @keyframes print-action {
+        0% { transform: translateY(50px); opacity: 0; }
+        10% { transform: translateY(50px); opacity: 1; }
+        45% { transform: translateY(0); opacity: 1; }
+        85% { transform: translateY(0); opacity: 1; }
+        95% { transform: translateY(-5px); opacity: 0; }
+        100% { transform: translateY(50px); opacity: 0; }
+      }
+
+      /* Simple pulsing light */
+      @keyframes blink {
+        0% { fill: #2ED573; filter: drop-shadow(0px 0px 2px #2ED573); opacity: 1; }
+        100% { fill: #2ED573; filter: none; opacity: 0.4; }
+      }
+    </style>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="50" cy="85" rx="42" ry="5" fill="#D5D8DC" />
+
+  <!-- Printer Back / Paper Guide -->
+  <rect x="22" y="45" width="56" height="20" rx="4" fill="#3B4856" />
+
+  <!-- =============================== -->
+  <!-- ANIMATED LABEL                  -->
+  <!-- =============================== -->
+  <g clip-path="url(#printer-slot)">
+    <g class="label-paper">
+      <!-- Paper Base -->
+      <rect x="28" y="12" width="44" height="52" rx="2" fill="#F4F6F7" stroke="#BDC3C7" stroke-width="0.5"/>
+      
+      <!-- Text Blocks -->
+      <rect x="33" y="18" width="26" height="3" fill="#2C3A47" />
+      <rect x="33" y="24" width="18" height="3" fill="#2C3A47" />
+      
+      <!-- Large Barcode -->
+      <rect x="33" y="34" width="3" height="20" fill="#2C3A47" />
+      <rect x="38" y="34" width="2" height="20" fill="#2C3A47" />
+      <rect x="42" y="34" width="5" height="20" fill="#2C3A47" />
+      <rect x="49" y="34" width="1.5" height="20" fill="#2C3A47" />
+      <rect x="52.5" y="34" width="4" height="20" fill="#2C3A47" />
+      <rect x="58" y="34" width="2" height="20" fill="#2C3A47" />
+      <rect x="62" y="34" width="1" height="20" fill="#2C3A47" />
+      <rect x="65" y="34" width="3" height="20" fill="#2C3A47" />
+      
+      <!-- Bottom Line -->
+      <rect x="33" y="58" width="35" height="1.5" fill="#95A5A6" />
+    </g>
+  </g>
+
+  <!-- =============================== -->
+  <!-- PRINTER BODY                    -->
+  <!-- =============================== -->
+  
+  <!-- Slot Depth / Shadow -->
+  <rect x="25" y="58" width="50" height="4" rx="1.5" fill="#182028" />
+
+  <!-- Printer Front Chassis (Smaller profile) -->
+  <rect x="18" y="60" width="64" height="23" rx="4" fill="#2C3A47" />
+  
+  <!-- Printer Base Trim -->
+  <rect x="20" y="81" width="60" height="3" rx="1" fill="#182028" />
+
+  <!-- Chassis Indentations / Vents -->
+  <rect x="23" y="65" width="18" height="4" rx="2" fill="#3B4856" />
+  <rect x="23" y="72" width="12" height="4" rx="2" fill="#3B4856" />
+
+  <!-- Indicator Lights -->
+  <circle cx="75" cy="67" r="2.5" class="status-light" />
+  <circle cx="75" cy="75" r="2.5" fill="#7F8C8D" />
+</svg>

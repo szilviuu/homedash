@@ -1,0 +1,3 @@
+#bg:after{display:none}
+#bg-overlay{position:fixed;inset:0;z-index:-1;pointer-events:none;background:rgba(0,0,0,var(--background-overlay,.4));transition:background .25s ease}
+.bg-options input[type=range]{width:110px;margin:0;vertical-align:middle}.bg-options output{min-width:3ch;color:var(--muted)}

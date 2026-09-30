@@ -1,0 +1,44 @@
+{
+    "name": "stranger",
+    "accent": "#1983f5",
+    "text_color": "#ffffff",
+    "font_family": "mono",
+    "font_scale": 85,
+    "background": "backgrounds/default.svg",
+    "bg_random": false,
+    "bg_rotation_minutes": 0,
+    "background_overlay": 40,
+    "video_loop": true,
+    "video_muted": true,
+    "weather": {
+        "city": "Şelimbăr, Romania",
+        "latitude": 45.76667,
+        "longitude": 24.2,
+        "units": "celsius"
+    },
+    "status_interval": 10,
+    "stats_interval": 30,
+    "disks": [
+        "/"
+    ],
+    "categories": [
+        "Media",
+        "DevOps",
+        "Home stuff",
+        "Personal"
+    ],
+    "links": [
+        {
+            "category": "Personal",
+            "items": [
+                {
+                    "name": "Web Landing",
+                    "url": "https://google.com/",
+                    "icon": "assets/icons/web.svg",
+                    "desc": "Website"
+                }
+            ]
+        }
+    ],
+    "hosts": []
+}

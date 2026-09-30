@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 24 24" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">Audio activity</title>
+  <desc id="desc">Three subtle vertical bars animating to indicate sound is on.</desc>
+  <defs>
+    <style>
+      :root { --sbv-speed: 1.8s; --sbv-ease: cubic-bezier(.4,.0,.2,1); }
+      @media (prefers-reduced-motion: reduce) {
+        .sbv-bar { animation: none !important; }
+      }
+      .sbv-group { opacity: .88; }
+      .sbv-bg { fill: #e6ffcc; opacity: 1.0; }
+      .sbv-bar { fill: #3333cc; rx: 1.25; }
+      @keyframes sbv-pulse {
+        0%   { transform: translateY(0) scaleY(1.00); opacity: 0.85; }
+        25%  { transform: translateY(-1px) scaleY(1.10); opacity: 0.95; }
+        50%  { transform: translateY(0) scaleY(1.00); opacity: 0.88; }
+        75%  { transform: translateY(1px) scaleY(0.92); opacity: 0.82; }
+        100% { transform: translateY(0) scaleY(1.00); opacity: 0.85; }
+      }
+      .sbv-b1 { animation: sbv-pulse var(--sbv-speed) cubic-bezier(.4,0,.2,1) infinite; transform-origin: 4px 12px; }
+      .sbv-b2 { animation: sbv-pulse calc(var(--sbv-speed) * 1.1) cubic-bezier(.4,0,.2,1) infinite .08s; transform-origin: 12px 12px; }
+      .sbv-b3 { animation: sbv-pulse calc(var(--sbv-speed) * 1.2) cubic-bezier(.4,0,.2,1) infinite .16s; transform-origin: 20px 12px; }
+    </style>
+  </defs>
+  <rect class="sbv-bg" x="1.5" y="1.5" width="21" height="21" rx="6"/>
+  <g class="sbv-group">
+    <rect class="sbv-bar sbv-b1" x="4" y="7" width="3" height="10"/>
+    <rect class="sbv-bar sbv-b2" x="10.5" y="6" width="3" height="12"/>
+    <rect class="sbv-bar sbv-b3" x="17" y="8" width="3" height="8"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+.link-editor-row + .link-editor-row {
+    border-top: 2px solid rgba(255, 255, 255, .28);
+    margin-top: 8px;
+    padding-top: 11px;
+}
+
+.remove-btn {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 126, 126, .65);
+    border-radius: 8px;
+    background: rgba(168, 57, 57, .2);
+    color: #ff9898;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.remove-btn:hover,
+.remove-btn:focus-visible {
+    background: #a83939;
+    color: #fff;
+}
