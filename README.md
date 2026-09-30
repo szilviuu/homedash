@@ -12,6 +12,8 @@ remote system metrics, configurable backgrounds, and an in-browser manager.
 All dashboard settings are stored in a JSON file, making the application easy
 to copy, back up, and run from a standard PHP web root.
 
+![Homelab Dashboard Screenshot](assets/all.png)
+
 ## Features
 
 - Responsive glass-style dashboard with configurable accent color, text color,
