@@ -1,5 +1,8 @@
 # Homelab Dashboard
 
+> [!NOTE]
+> **Project Status:** This dashboard is feature-complete for my setup, and I won't be actively developing or maintaining new versions. Feel free to fork it and make it your own!
+
 A lightweight, self-hosted start page for a homelab. It is a single PHP
 application with vanilla JavaScript and CSS: no framework, database, package
 manager, build step, or external API key is required.
